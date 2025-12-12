@@ -27,34 +27,9 @@ const router = createBrowserRouter([
 
 export default function App() {
 
-  const [view, setView] = useState("");
-
-
   return (
     <div>
       <RouterProvider router={router}/>
-      <div className="flex gap-36 mb-12 justify-center mt-18">
-
-
-        <ViewToggleButton className="pr-100"
-        onClick={() => {
-          setView("userhome");
-        }}>
-          User Home View
-        </ViewToggleButton>
-
-        <ViewToggleButton 
-        onClick={() => {
-          setView("adminhome");
-        }}>
-          Admin Home View
-        </ViewToggleButton>
-
-      </div>
-        {view === "adminhome" && <AdminHome />}
-        {view === "userhome" && <UserHome />}
-
-
     </div>
 
 

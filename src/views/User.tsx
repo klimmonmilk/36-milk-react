@@ -1,7 +1,12 @@
-import axios from "axios";
-import { use, useEffect } from "react";
+import UserTable from "../components/Usertable";
 
-const UserHome = async () => {}
+const UserHome = () => {
+  return (
+    <div>
+      <UserTable />
+    </div>
+  )
+}
 
 
 export default UserHome;
