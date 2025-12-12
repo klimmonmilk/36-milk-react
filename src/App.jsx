@@ -1,5 +1,4 @@
 import {createBrowserRouter, Router, RouterProvider} from "react-router-dom";
-import { useState } from "react";
 import Layout from "./components/Layout";
 import Home from "./views/Home";
 import Owner from "./views/Owner";
